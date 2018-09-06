@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#counts the number of unique occurences
+
+#note: cat input* will cat them all at the same time
+#tr transforms a space into a line break, so each word is on one line
+#the grep -v ^$ (-v remove, ^$ matches empty line) will get rid of empty lines
+#sort, will sort them all
+#uniq counts
+cat input* | tr ' ' '\n' | grep -v ^$ | sort | uniq -c

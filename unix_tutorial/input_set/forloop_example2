@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+# You can do a bunch of stuff, including pipe and run other commands via `command` in the 'do' part of the loop
+
+# A ; can be replaced with a line break in more lengthy scripts
+
+for i in `ls input*`
+do
+  echo ---
+  echo $i
+  echo "`cat $i | wc -l` lines"
+done
+

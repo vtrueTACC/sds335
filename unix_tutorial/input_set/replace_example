@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+#will go through each file input*, echo a --- followed by the filename, grep for transom and replace with treason
+for i in `ls input*`
+do 
+  echo ---
+  echo $i
+  grep transom $i | sed 's/transom/treason/' 
+done
+
+
+
+

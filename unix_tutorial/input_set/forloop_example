@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+# basic for loop
+
+for i in `ls input*`; do echo $i; done
+
+
